@@ -8,8 +8,8 @@ This is a solution to the Web3Bridge Weekly Tasks. The challenge is to build a p
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/EmmanuelUDC/portfolio-project](https://github.com/EmmanuelUDC/portfolio-project)
+- Live Site URL: [https://emmanueludc.github.io/portfolio-project/](https://emmanueludc.github.io/portfolio-project/)
 
 ### Built with
 
