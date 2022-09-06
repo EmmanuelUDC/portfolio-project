@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Bigshot+One&family=Comforter+Brush&family=Lexend+Deca:wght@400;600&family=Lexend+Giga:wght@600;700&display=swap');
+
+
+html{
+    scroll-padding-top:  var(--scroll-padding, 80px);
+}
+
+body{
+    font-family: 'Lexend Deca', cursive;
+}
+
+body::before{
+    display: block;
+    content: '';
+    height: 70px;
+}
+
+.navbar .navbar-brand{
+    font-family: 'Comforter Brush';
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+img {
+  width: 100%;
+  height: 80%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  height: 75vh;
+}
+
+.contact-btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f4d003;
+    color: #000;
+    font-weight: bold;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+}
+
+.contact-btn:hover{
+    background: #000;
+    color: #f4d003;
+    box-shadow: 0 0 5px #f4d003,
+                0 0 15px #f4d003;
+                
+}
+
+.contact-btn span{
+    position: absolute;
+    display: block;
+}
+
+.contact-btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #000);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1{
+    0% {
+        left: -100%;
+    }
+
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+.contact-btn span:nth-child(2) {
+    top: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #000);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2{
+    0% {
+        top: -100%;
+    }
+
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.contact-btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #000);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.contact-btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #000);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4{
+    0% {
+        bottom: -100%;
+    }
+
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+.info {
+  width: 50%;
+  animation: slideInFromLeft 1s ease-in;
+}
+
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.info .hero-heading{
+    font-family: 'Bigshot One';
+    font-size: 4rem;
+}
+
+.info .hero-sub-heading{
+    opacity: 0.5;
+}
+
+.about-heading{
+    font-family: 'Lexend Giga';
+}
+
+.info .welcome{
+    font-family: 'Big Shoulders Display';
+    font-weight: bold;
+    font-size: 3rem;
+    color: #8ed82c;
+}
+
+.info .name{
+    font-family: 'Lexend Giga';
+}
+
+.info-img {
+  width: 50%;
+  animation: slideInFromRight 1s ease-in;
+}
+
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.info-img img {
+  width: 100%;
+}
+
+.about-section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.carousel-sm{
+    display: none;
+}
+
+.carousel .title{
+    font-family: 'Lexend Giga';
+}
+
+.carousel-item{
+    height: 265px;
+}
+
+.mail-btn{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #f4d003;
+    font-weight: bold;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+}
+
+.mail-btn:hover{
+    background: #f4d003;
+    color: #000;
+    box-shadow: 0 0 5px #f4d003,
+                0 0 15px #f4d003;
+}
+
+.mail-btn span{
+    position: absolute;
+    display: block;
+}
+
+.mail-btn span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #f4d003);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1{
+    0% {
+        left: -100%;
+    }
+
+    50%, 100%{
+        left: 100%;
+    }
+}
+
+.mail-btn span:nth-child(2) {
+    top: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #f4d003);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2{
+    0% {
+        top: -100%;
+    }
+
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+.mail-btn span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #f4d003);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.mail-btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #f4d003);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4{
+    0% {
+        bottom: -100%;
+    }
+
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+footer{
+    background-color: #b1b1b1;
+    height: 5rem;
+}
+
+@media (max-width: 575px) {
+    
+  body::before{
+    display: block;
+    content: '';
+    height: 70px;
+  }
+
+  .hero,
+  .about-section {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-top: 0rem;
+    height: auto;
+  }
+
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info {
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  .info .hero-heading{
+    font-family: 'Bigshot One';
+    font-size: 2.5rem;
+}
+
+  .info-img {
+    width: 100%;
+  }
+
+  .card {
+    height: auto;
+  }
+
+  .carousel-lg{
+      display: none;
+  }
+
+  .carousel-sm{
+      display: block;
+  }
+
+  .carousel-item{
+      height: 260.5px;
+  }
+}
+
+@media (min-width: 575px) and (max-width:991px){
+    .info .hero-heading{
+        font-family: 'Bigshot One';
+        font-size: 2rem;
+    }
+    
+    .carousel-lg{
+        display: none;
+    }
+
+    .carousel-sm{
+        display: block;
+    }
+
+    .card{
+        height: auto;
+    }
+  
+}
